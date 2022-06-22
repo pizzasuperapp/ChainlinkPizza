@@ -4,21 +4,21 @@
 </p>
 <br/>
 
-[Chainlink]expands the capabilities of smart contracts by enabling access to real-world data and off-chain computation while maintaining the security and reliability guarantees inherent to blockchain technology.
+[Chainlink Pizza]expands the capabilities of smart contracts by enabling access to real-world data and off-chain computation while maintaining the security and reliability guarantees inherent to blockchain technology.
 
-This repo contains the Chainlink core node, operator UI and contracts. The core node is the bundled binary available to be run by node operators participating in a [decentralized oracle network]
+This repo contains the Chainlink Pizza core node, operator UI and contracts. The core node is the bundled binary available to be run by node operators participating in a [decentralized oracle network]
 If you are interested in contributing please see our [contribution guidelines]
 If you are here to report a bug or request a feature, please [check currently open Issues]
-For more information about how to get started with Chainlink, check our [official documentation]
-Resources for Solidity developers can be found in the [Chainlink Hardhat Box]
+For more information about how to get started with Chainlink Pizza, check our [official documentation]
+Resources for Solidity developers can be found in the [Chainlink Pizza Hardhat Box]
 ## Community
 
 is the primary communication channel used for day to day communication,
-answering development questions, and aggregating Chainlink related content. Take
+answering development questions, and aggregating Chainlink Pizza related content. Take
 a look at the [community docs](./docs/COMMUNITY.md) for more information
-regarding Chainlink social accounts, news, and networking.
+regarding Chainlink Pizza social accounts, news, and networking.
 
-## Build Chainlink
+## Build Chainlink Pizza
 
 1. [Install Go 1.18](https://golang.org/doc/install), and add your GOPATH's [bin directory to your PATH](https://golang.org/doc/code.html#GOPATH)
    - Example Path for macOS `export PATH=$GOPATH/bin:$PATH` & `export GOPATH=/Users/$USER/go`
@@ -27,8 +27,8 @@ regarding Chainlink social accounts, news, and networking.
 3. Install [Postgres (>= 11.x)](https://wiki.postgresql.org/wiki/Detailed_installation_guides).
    - You should [configure Postgres](https://www.postgresql.org/docs/12/ssl-tcp.html) to use SSL connection (or for testing you can set `?sslmode=disable` in your Postgres query string).
 4. Ensure you have Python 3 installed (this is required by [solc-select](https://github.com/crytic/solc-select) which is needed to compile solidity contracts)
-5. Download Chainlink: `git clone https://github.com/smartcontractkit/chainlink && cd chainlink`
-6. Build and install Chainlink: `make install`
+5. Download Chainlink Pizza: `git clone https://github.com/smartcontractkit/chainlink && cd chainlink`
+6. Build and install Chainlink Pizza: `make install`
    - If you got any errors regarding locked yarn package, try running `yarn install` before this step
    - If `yarn install` throws a network connection error, try increasing the network timeout by running `yarn install --network-timeout 150000` before this step
 7. Run the node: `chainlink help`
@@ -37,7 +37,7 @@ For the latest information on setting up a development environment, see the [Dev
 
 ### Mac M1/ARM64 [EXPERIMENTAL]
 
-Chainlink can be experimentally compiled with ARM64 as the target arch. You may run into errors with cosmwasm:
+Chainlink Pizza can be experimentally compiled with ARM64 as the target arch. You may run into errors with cosmwasm:
 
 ```
 # github.com/CosmWasm/wasmvm/api
@@ -57,7 +57,7 @@ In this case, try the following steps:
 
 ### Ethereum Node Requirements
 
-In order to run the Chainlink node you must have access to a running Ethereum node with an open websocket connection.
+In order to run the Chainlink Pizza node you must have access to a running Ethereum node with an open websocket connection.
 Any Ethereum based network will work once you've [configured](https://github.com/smartcontractkit/chainlink#configure) the chain ID.
 Ethereum node versions currently tested and supported:
 
@@ -65,7 +65,7 @@ Ethereum node versions currently tested and supported:
 
 We cannot recommend specific version numbers for ethereum nodes since the software is being continually updated, but you should usually try to run the latest version available.
 
-## Running a local Chainlink node
+## Running a local Chainlink Pizza node
 
 **NOTE**: By default, chainlink will run in TLS mode. For local development you can disable this by setting the following env vars:
 
@@ -76,7 +76,7 @@ SECURE_COOKIES=false
 ```
 
 Alternatively, you can generate self signed certificates using `tools/bin/self-signed-certs` or [manually]
-To start your Chainlink node, simply run:
+To start your Chainlink Pizza node, simply run:
 
 ```bash
 chainlink node start
@@ -84,7 +84,7 @@ chainlink node start
 
 By default this will start on port 6688. You should be able to access the UI at [http://localhost:6688/](http://localhost:6688/).
 
-Chainlink provides a remote CLI client as well as a UI. Once your node has started, you can open a new terminal window to use the CLI. You will need to log in to authorize the client first:
+Chainlink Pizza provides a remote CLI client as well as a UI. Once your node has started, you can open a new terminal window to use the CLI. You will need to log in to authorize the client first:
 
 ```bash
 chainlink admin login
@@ -98,7 +98,7 @@ Now you can view your current jobs with:
 chainlink jobs list
 ```
 
-To find out more about the Chainlink CLI, you can always run `chainlink help`.
+To find out more about the Chainlink Pizza CLI, you can always run `chainlink help`.
 
 Check out the [doc] pages on [Jobs]to learn more about how to create Jobs.
 
@@ -110,7 +110,7 @@ Check the [official documentation] for more information on how to configure your
 
 ### External Adapters
 
-External adapters are what make Chainlink easily extensible, providing simple integration of custom computations and specialized APIs. A Chainlink node communicates with external adapters via a simple REST API.
+External adapters are what make Chainlink Pizza easily extensible, providing simple integration of custom computations and specialized APIs. A Chainlink Pizza node communicates with external adapters via a simple REST API.
 
 For more information on creating and using external adapters, please see our [external adapters page] 
 
@@ -241,7 +241,7 @@ Now you can run tests or compile code as usual.
 
 ### Contributing
 
-Chainlink's source code is [licensed under the MIT License](./LICENSE), and contributions are welcome.
+Chainlink Pizza's source code is [licensed under the MIT License](./LICENSE), and contributions are welcome.
 
 
 Thank you!
